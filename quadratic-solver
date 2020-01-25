@@ -1,0 +1,34 @@
+var a = prompt("Please enter the A value:")
+while (("" + a + 1 == "1") || (a / 1 != a) || (a == 0)) {
+  a = prompt("A must be a number and cannot be 0, please enter it again:")
+}
+var b = prompt("Please enter the B value:")
+while (("" + b + 1 == "1") || (b / 1 != b)) {
+  b = prompt("B must be a number, please enter it again:")
+}
+var c = prompt("Please enter the C value:")
+while (("" + c + 1 == "1") || (c / 1 != c)) {
+  c = prompt("C must be a number, please enter it again:")
+}
+var dis = Math.pow(b, 2) - 4 * a * c
+var s1 = null
+var s2 = null
+var check = -1
+if (dis >= 0) {
+  s1 = (-b + Math.sqrt(dis)) / (2 * a)
+  s2 = (-b - Math.sqrt(dis)) / (2 * a)
+  check = 1
+  if (dis == 0) {
+    check = 0
+  }
+}
+var aos = -b / (2 * a)
+var vx = aos
+var vy = (a * Math.pow(aos, 2)) + (b * aos) + 1 * c
+if (check == 0) {
+  alert("There is only one solution: x = " + s1 + "\nThe vertex is ( " + vx + " , " + vy + " )\nThe axis of symmetry is x = " + aos)
+} else if (check == 1) {
+  alert("There are two solutions: x = " + s1 + " and x = " + s2 + "\nThe vertex is ( " + vx + " , " + vy + " )\nThe axis of symmetry is x = " + aos)
+} else if (check == -1) {
+  alert("There are no solutions.\nThe vertex is ( " + vx + " , " + vy + " )\nThe axis of symmetry is x = " + aos)
+}
