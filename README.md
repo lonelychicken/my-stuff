@@ -1,6 +1,6 @@
-# my-stuff
-Not yours
-I am banana, the happiest one in the land
-I am Morbius, defender of the motherland
-I am Jeffrey, everyone hates me
-I am daemon, the conquerer of all
+# Unofficial Fiddles
+
+--> Work-in-progress projects that I haven't committed to release yet.
+--> Random crap I type out on a whim
+--> Beliefs on government and pigeons
+--> banana
